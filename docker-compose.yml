@@ -1,0 +1,11 @@
+version: '3'
+services:
+    app:
+        build: ./back
+        ports:
+            - 8080:8080
+
+    client:
+        build: ./dashboard
+        ports:
+            - 3000:3000
